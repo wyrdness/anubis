@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/anubis",
     "maintainers": [
       {
@@ -16,111 +16,234 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "anubis",
-    "name": "Anubis - Egyptian God of Death and Mummification",
-    "aliases": [],
+    "name": "Anubis",
+    "aliases": [
+      { "name": "Anpu", "language": "Egyptian transliteration" },
+      { "name": "Inpu", "language": "Egyptian transliteration" },
+      { "name": "Inpw", "language": "Egyptian transliteration" },
+      { "name": "Hermanubis", "language": "Greco-Egyptian", "region": "Ptolemaic and Roman Egypt", "meaning": "syncretic merger with Hermes" }
+    ],
     "category": "MYTHOLOGICAL_CREATURE",
-    "subcategory": "for all Egyptian embalming",
+    "subcategory": "Ancient Egyptian funerary deity",
     "tags": [
-      "folklore",
-      "mythology"
+      "egyptian",
+      "deity",
+      "afterlife",
+      "mummification",
+      "psychopomp",
+      "weighing-of-the-heart",
+      "jackal"
     ],
     "status": "documented",
     "description": {
-      "summary": "Anubis (Inpw in ancient Egyptian, also called Anpu) is one of the most iconic deities of ancient Egypt - the jackal-headed god who presided over mummification, guided souls through the underworld, and protected the dead.",
-      "full": "Anubis (Inpw in ancient Egyptian, also called Anpu) is one of the most iconic deities of ancient Egypt - the jackal-headed god who presided over mummification, guided souls through the underworld, and protected the dead. As the original Egyptian god of death before being partially supplanted by Osiris, Anubis remained central to funerary practices for over 3,000 years. His distinctive black jackal or dog form, associated with cemeteries and the color of fertile soil/rebirth, made him instantly recognizable and deeply revered throughout Egyptian civilization."
+      "summary": "Ancient Egyptian jackal-headed deity associated with mummification, the protection of tombs, and the conduct of souls through the underworld; one of the longest-lived figures in Egyptian religion.",
+      "full": "Anubis (Egyptian Inpw / Anpu) is an ancient Egyptian deity associated with mummification, the protection of cemeteries, and the journey of the dead through the underworld. He is consistently depicted either as a man with the head of a black jackal-like canid or in full canid form. The black colour of his coat is symbolic rather than zoological, evoking both the discoloration of the body during natron desiccation and the fertile black silt of the Nile from which new life rises. Anubis was worshipped from the Predynastic period (c. 4000 BCE) into the Roman era and was the principal funerary god of the Old Kingdom; in the Middle Kingdom Osiris rose in prominence and Anubis took on a constellation of subordinate but enduring roles, including 'He who is upon his mountain' (guardian of the cemetery), 'He who is in the place of embalming', 'Lord of the Sacred Land', and 'Opener of the Ways'. In the iconic judgment scene of Chapter 125 of the Book of the Dead, Anubis presides over the weighing of the heart against the feather of Maat. His parents and children differ across traditions: he is variously the son of Ra, of Set and Nephthys, or (in later tradition) of Osiris and Nephthys, and is the father of the serpent goddess Kebechet. In the Ptolemaic and Roman periods Anubis was syncretised with the Greek Hermes as Hermanubis. His main cult centre was at Hardai, called by the Greeks Cynopolis ('city of the dog')."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Anubis is the Greek rendering of the Egyptian Inpw / Anpu.",
+      "meaning": "The name's root has been connected to the word 'inp' associated with decay, fitting his funerary role; alternative folk-etymologies relate it to 'a royal child'.",
+      "first_use": "Anubis is attested from the Old Kingdom (c. 2700 BCE) and possibly earlier in Predynastic iconography of canids on cemetery standards."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "MYTHOLOGICAL_CREATURE",
-      "type": "for all Egyptian embalming",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Deity",
+      "subtype": "Funerary / psychopomp",
+      "variant": "Ancient Egyptian"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "ammit", "name": "Ammit", "relationship": "related", "description": "Devourer of the unworthy heart in the same judgment scene presided over by Anubis" },
+      { "id": "osiris", "name": "Osiris", "relationship": "related", "description": "Lord of the underworld, partially supplanting Anubis from the Middle Kingdom" },
+      { "id": "wepwawet", "name": "Wepwawet", "relationship": "similar", "description": "Other Egyptian canid deity, 'Opener of the Ways'" },
+      { "id": "hermanubis", "name": "Hermanubis", "relationship": "regional_variant", "description": "Greco-Egyptian syncretism of Anubis and Hermes" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["black"],
+      "features": [
+        { "feature": "Jackal / canid head", "description": "Head of a black jackal-like canid (debated as jackal, dog, or fox-jackal hybrid)", "frequency": "always" },
+        { "feature": "Black colouration", "description": "Symbolic black coat evoking mummification and fertile Nile soil", "frequency": "always" },
+        { "feature": "Anthropomorphic body", "description": "Most often depicted as a man with the canid head; full canid form also frequent", "frequency": "always" },
+        { "feature": "Was sceptre and ankh", "description": "Frequently depicted holding the was-sceptre and ankh, attributes of divine authority and life", "frequency": "common" }
+      ],
+      "morphology": "Standard Egyptian zoocephalic deity form: human body with the head of a black canid."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Mummification and embalming", "description": "Patron and divine performer of mummification rites", "frequency": "always", "evidence_level": "documented" },
+      { "ability": "Conducting souls (psychopomp)", "description": "Guides the deceased through the underworld and the judgment scene", "frequency": "always", "evidence_level": "documented" },
+      { "ability": "Weighing of the heart", "description": "Operates the scales in the judgment of the dead against the feather of Maat", "frequency": "always", "evidence_level": "documented" },
+      { "ability": "Protection of the tomb", "description": "Guards cemeteries from desecration as 'He who is upon his mountain'", "frequency": "always", "evidence_level": "documented" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "neutral",
+      "social_structure": "family_group",
+      "habitat_preference": ["Duat (underworld)", "necropolis", "Hall of Two Truths"]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Worshipped throughout ancient Egypt, with principal cult centre at Hardai (Cynopolis) in Upper Egypt; cult spread into the wider Greco-Roman world during the Ptolemaic and Roman periods.",
+      "continents": ["Africa", "Europe (Greco-Roman diffusion)"],
+      "countries": ["Ancient Egypt", "Roman Empire"],
+      "regions": ["Nile Valley", "Hardai / Cynopolis"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Cynopolis (Hardai)",
+        "location": {
+          "description": "Anubis's principal cult centre in the 17th Upper Egyptian nome",
+          "country": "Egypt",
+          "region": "Middle Egypt"
+        },
+        "peak_period": "Pharaonic and Greco-Roman",
+        "notes": "Greek 'Cynopolis' translates 'city of the dog'; major centre of canid mummification."
+      },
+      {
+        "name": "Anubieion at Saqqara",
+        "location": {
+          "description": "Temple complex of Anubis at the Saqqara necropolis",
+          "country": "Egypt",
+          "region": "Memphis necropolis"
+        },
+        "peak_period": "Late Period and Greco-Roman",
+        "notes": "Site of large-scale canid catacombs and pilgrim activity."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "Predynastic / Old Kingdom",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Egyptian Old Kingdom funerary inscriptions"
+      },
+      "peak_activity_periods": [
+        { "period": "Old Kingdom (c. 2700–2200 BCE)", "description": "Anubis is the principal funerary god" },
+        { "period": "New Kingdom (c. 1550–1070 BCE)", "description": "Standardised judgment iconography of the Book of the Dead" },
+        { "period": "Ptolemaic / Roman (323 BCE–4th c. CE)", "description": "Syncretism with Hermes as Hermanubis" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Egyptian Predynastic and Old Kingdom funerary religion, observing the role of canids around cemetery margins.",
+      "earliest_accounts": "Old Kingdom mortuary inscriptions naming Inpw / Anpu; Predynastic standards bearing canids may anticipate the figure.",
+      "folklore_connections": "Connected to the broader Egyptian family of canid deities (Wepwawet, Khentiamentiu) and to the Greco-Roman Hermanubis."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "c. 2700 BCE", "event": "Anubis attested as principal funerary god in Old Kingdom mortuary inscriptions", "significance": "Establishes him at the head of the funerary pantheon", "source": "Pyramid Texts and Old Kingdom mastaba inscriptions" },
+      { "date": "c. 2000 BCE", "event": "Rise of Osiris partially supplants Anubis as lord of the underworld in the Middle Kingdom", "significance": "Anubis assumes specialised funerary roles", "source": "Coffin Texts" },
+      { "date": "c. 1550–1070 BCE", "event": "Anubis depicted presiding over the Weighing of the Heart in New Kingdom Books of the Dead", "significance": "Iconic image of Anubis enters its canonical form", "source": "Book of the Dead corpus (e.g. Papyrus of Ani, Papyrus of Hunefer)" },
+      { "date": "c. 332 BCE onward", "event": "Ptolemaic and Roman-era syncretism produces Hermanubis", "significance": "Anubis enters the wider Mediterranean religious world", "source": "Greco-Roman religious iconography" }
+    ],
+    "modern_era": "Anubis is one of the most globally recognised figures of Egyptian religion, central to museum collections worldwide and to popular representations of ancient Egypt in literature, film, and games."
   },
+
   "sightings": {
-    "statistics": {
-      "total_documented": 0,
-      "verified": 0,
-      "disputed": 0,
-      "debunked": 0
-    },
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
-    "physical": [],
+    "physical": [
+      {
+        "id": "anubis-evidence-tutankhamun-shrine",
+        "type": "artifact",
+        "name": "Anubis Shrine of Tutankhamun",
+        "date": "c. 1323 BCE",
+        "description": "Wooden recumbent Anubis figure on a portable shrine, recovered from the tomb of Tutankhamun (KV62) by Howard Carter in 1922.",
+        "location": "Egyptian Museum, Cairo / Grand Egyptian Museum",
+        "status": "verified",
+        "source": "Carter excavation records; Egyptian Museum"
+      }
+    ],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "anubis-evidence-papyrus-of-ani",
+        "type": "manuscript",
+        "name": "Papyrus of Ani — judgment scene",
+        "date": "c. 1250 BCE",
+        "description": "19th Dynasty Book of the Dead papyrus depicting Anubis conducting the weighing of the heart.",
+        "location": "British Museum, London (EA 10470)",
+        "status": "verified",
+        "source": "British Museum collection record"
+      }
+    ]
   },
+
   "theories": {
     "paranormal": [],
-    "scientific": [],
+    "scientific": [
+      {
+        "name": "Funerary deity rooted in observation of canids",
+        "description": "Egyptologists understand the figure as an Old Kingdom funerary deity whose canid form reflects the historical role of jackals and feral dogs as observers and scavengers at cemeteries on the desert margin.",
+        "proponents": ["Egyptological consensus"],
+        "evidence_cited": ["Cemetery topography on the desert margin", "Continuity of canid imagery through Egyptian religion"]
+      }
+    ],
     "skeptical": []
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Old Kingdom mortuary tradition",
+        "New Kingdom Book of the Dead tradition",
+        "Greco-Roman Hermanubis tradition"
+      ],
+      "stories": [
+        "The judgment of the dead before Osiris (Book of the Dead, Chapter 125)",
+        "The mummification of Osiris by Anubis (Plutarch, On Isis and Osiris)"
+      ],
+      "beliefs": "Anubis embodied the careful, ritualised relationship between Egyptian society and its dead."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "The Egyptian Book of the Dead — translated by R. O. Faulkner (1972)"
+      ],
+      "film_tv": [
+        "Stargate (1994) and Stargate SG-1 — fictional depiction",
+        "The Mummy (1999) — fictional depiction",
+        "Moon Knight (Marvel Studios, 2022) — Anubis-adjacent imagery"
+      ],
+      "games": [
+        "Smite (2014) — Anubis as playable god"
+      ],
+      "other": [
+        "Anubis statuary in the British Museum, the Louvre, and the Egyptian Museum, Cairo"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Salima Ikram", "affiliation": "American University in Cairo (Egyptology)", "contribution": "Major work on Egyptian animal mummification including the canid catacombs of Saqqara and Hardai", "period": "1990s–present" },
+      { "name": "John H. Taylor", "affiliation": "British Museum, Department of Egypt and Sudan", "contribution": "Curatorial and scholarly work on Egyptian funerary religion", "period": "1990s–present" },
+      { "name": "Erik Hornung", "affiliation": "University of Basel (Egyptology)", "contribution": "Synthesis of Egyptian afterlife literature and the role of Anubis", "period": "1960s–2010s" }
+    ],
+    "organizations": [
+      { "name": "Egyptian Museum, Cairo / Grand Egyptian Museum", "url": "https://www.gem.gov.eg", "focus": "Custodian of major Anubis artefacts" },
+      { "name": "British Museum, Department of Egypt and Sudan", "url": "https://www.britishmuseum.org", "focus": "Custodian of Book of the Dead papyri including the Papyrus of Ani" }
+    ],
+    "ongoing_studies": "Continuing work on the canid catacombs of Saqqara and Hardai, on Book of the Dead iconography, and on the Hermanubis syncretism."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-anubis", "type": "website", "title": "Anubis", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Anubis", "accessed": "2026-05-07" },
+    { "id": "ikram-2005", "type": "book", "title": "Divine Creatures: Animal Mummies in Ancient Egypt", "authors": ["Salima Ikram (ed.)"], "publication": "American University in Cairo Press", "date": "2005", "isbn": "978-9774248580" },
+    { "id": "taylor-2010-anubis", "type": "book", "title": "Journey through the Afterlife: Ancient Egyptian Book of the Dead", "authors": ["John H. Taylor"], "publication": "British Museum Press", "date": "2010", "isbn": "978-0714119892" },
+    { "id": "hornung-1999-anubis", "type": "book", "title": "The Ancient Egyptian Books of the Afterlife", "authors": ["Erik Hornung"], "publication": "Cornell University Press", "date": "1999", "isbn": "978-0801485152" }
+  ]
 }
